@@ -40,9 +40,9 @@
     /* Style for the WhatsApp button */
     .floating-button {
         position: fixed;
-        bottom: 50%;
-        left: 10px; /* Adjust spacing from the left side */
-        background-color: #25d366; /* WhatsApp green color */
+        bottom: 5%;
+        left: 20px; /* Adjust spacing from the left side */
+        background-color: #00b341; /* WhatsApp green color */
         color: #fff;
         width: 60px;
         height: 60px;
@@ -53,7 +53,7 @@
         cursor: pointer;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
         z-index: 1000;
-        animation: float 2s infinite ease-in-out;
+        
     }
 
     @keyframes float {
@@ -75,8 +75,9 @@
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
+        justify-content: center;
         z-index: 1000;
-        max-width: 300px;
+        max-width: 500px;
         text-align: center;
     }
 
@@ -89,23 +90,23 @@
         margin: 10px 0;
         padding: 10px 15px;
         text-decoration: none;
-        background-color: #25d366;
+        background-color: #039a3b;
         color: #fff;
         border-radius: 5px;
     }
 </style>
 </head>
 <body>
-WhatsApp button 
-<div class="floating-button" onclick="togglePopup()">WhatsApp</div>
+<!--WhatsApp button--> 
+<div class="floating-button" onclick="togglePopup()"><img src="images/whatsapp-icon.png" alt="WhatsApp Icon" width="50"></div>
 
-WhatsApp popup 
+<!--WhatsApp popup--> 
 <div class="popup" id="popup">
     <h3>Contact Us</h3>
     <p>For WhatsApp, click the button below:</p>
     <a href="https://wa.me/9129664191" target="_blank" class="btn-whatsapp">Open WhatsApp</a>
     <p>Or call us directly at:</p>
-    <a href="tel:9129664191" class="btn-call">9129664191</a>
+    <a href="tel:+9129664191" class="btn-call">9129664191</a>
     <span class="close" onclick="togglePopup()">&times;</span>
 </div>
 
@@ -119,7 +120,7 @@ WhatsApp popup
             popup.style.display = "none";
         }
     }
-</script>-->
+</script>
 <body>
 <head>
     <!-- Tawk.to Script -->
